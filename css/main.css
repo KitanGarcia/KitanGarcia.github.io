@@ -1,58 +1,43 @@
-/**
-{
-  outline: 1px solid red !important;
+body {
+    margin: 60px auto;
+    width: 70%;
+}
+nav ul, footer ul {
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    padding: 0px;
+    list-style: none;
+    font-weight: bold;
+}
+nav ul li, footer ul li {
+    display: inline;
+    margin-right: 20px;
+}
+a {
+    text-decoration: none;
+    color: #999;
+}
+a:hover {
+    text-decoration: underline;
+}
+h1 {
+    font-size: 3em;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+}
+p {
+    font-size: 1.5em;
+    line-height: 1.4em;
+    color: #333;
+}
+footer {
+    border-top: 1px solid #d5d5d5;
+    font-size: .8em;
 }
 
-*
-{
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-}*/
-
-.container
-{
-  background-color:  #BCCCBB
+ul.posts { 
+    margin: 20px auto 40px; 
+    font-size: 1.5em;
 }
 
-body
-{
-  font-family: 'Lato', sans-serif;
-  color: #747784;
-  font-weight: 300;
-}
-
-.horule
-{
-  margin-top: 20px;
-  margin-bottom: 20px;
-  height: 4px;
-  background-color: white;
-}
-
-
-
-.col-md-1
-{
-  width: 25%;
-  float: left;
-  text-align: center;
-}
-
-.link
-{
-  font-size: 22px;
-}
-
-.text-muted
-{
-	color: #BCBBBB;	
-}
-
-.title
-{
-  font-family: 'Lato', sans-serif;
-  font-weight: 100;
-  color: white;
+ul.posts li {
+    list-style: none;
 }
