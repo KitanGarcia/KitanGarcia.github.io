@@ -1,43 +1,120 @@
-body {
-    margin: 60px auto;
-    width: 70%;
-}
-nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
-    list-style: none;
-    font-weight: bold;
-}
-nav ul li, footer ul li {
-    display: inline;
-    margin-right: 20px;
-}
-a {
-    text-decoration: none;
-    color: #999;
-}
-a:hover {
-    text-decoration: underline;
-}
-h1 {
-    font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-}
-p {
-    font-size: 1.5em;
-    line-height: 1.4em;
-    color: #333;
-}
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
+/**
+{
+  outline: 1px solid red !important;
 }
 
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
+*
+{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}*/
+
+.name
+{
+  margin-top: -7px;
+  margin-left: -27px;
+  float: left;
+  color: orange;
+}
+.row
+{
+  display: flex;
+  height = 100%;
 }
 
-ul.posts li {
-    list-style: none;
+.left
+{
+  background-color: #4d1a00;/*Fix the side background*/
+  flex: 1;
+  position: absolute;
+  float: left;
+}
+
+.right
+{
+  background-color: #4d1a00;/*Fix the side background*/
+  flex: 1;
+  position: absolute;
+  float: right;
+}
+
+ul
+{ background-color: maroon;
+  list-style-type: none;
+  overflow: hidden; 
+  position: fixed;
+  width: 100%;
+  opacity: 1;
+  z-index: 99; /*Makes navbar opaque*/
+}
+
+li
+{
+  float: right;
+  color: white;
+  text-decoration: none;
+}
+
+li a
+{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active)
+{
+  background-color: orange;
+  color: white;
+  text-decoration: none;
+}
+
+.active
+{
+  background-color: orange;
+  color: white;
+  text-decoration: none;
+}
+
+li a:visited
+{
+  color: white;
+  text-decoration: none;
+}
+
+li a:link
+{
+  color: white;
+  text-decoration: none;
+}
+
+
+.about
+{
+  position: relative;
+  background-color: grey;
+ /* width: 70%;*/
+}
+
+.abouttext
+{
+  color: white;
+  opacity: 1;
+}
+
+.imgme
+{
+  border-radius: 100%;
+  margin-top: -30px
+}
+
+.portfolio
+{
+  position: relative;
+  background-color: grey;
+ /* width: 70%;*/
 }
