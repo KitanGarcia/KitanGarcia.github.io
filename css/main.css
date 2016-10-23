@@ -18,6 +18,7 @@
   float: left;
   color: orange;
 }
+
 .row
 {
   display: flex;
@@ -26,7 +27,7 @@
 
 .left
 {
-  background-color: #2C3539;/*Fix the side background*/
+  background-color: #2C3539;/*Fix the side #25383C background*/
   flex: 1;
   position: absolute;
   float: left;
@@ -34,7 +35,7 @@
 
 .right
 {
-  background-color: #2C3539;/*Fix the side background*/
+  background-color: #2C3539;/*Fix the side #4d1a00 background*/
   flex: 1;
   position: absolute;
   float: right;
@@ -96,7 +97,7 @@ li a:link
 .about
 {
   position: relative;
-  background-color: grey;
+  background-color: #6D7B8D;
  /* width: 70%;*/
 }
 
@@ -109,7 +110,7 @@ li a:link
 .imgme
 {
   border-radius: 100%;
-  margin-top: -30px
+  margin-top: -30px;
 }
 
 .portfolio
