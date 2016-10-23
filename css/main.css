@@ -26,7 +26,7 @@
 
 .left
 {
-  background-color: #4d1a00;/*Fix the side background*/
+  background-color: #2C3539;/*Fix the side background*/
   flex: 1;
   position: absolute;
   float: left;
@@ -34,7 +34,7 @@
 
 .right
 {
-  background-color: #4d1a00;/*Fix the side background*/
+  background-color: #2C3539;/*Fix the side background*/
   flex: 1;
   position: absolute;
   float: right;
