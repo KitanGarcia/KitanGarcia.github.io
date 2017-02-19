@@ -4,13 +4,13 @@
   box-sizing: border-box;
 }
 
-*
+**/
 {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
-}*/
+}
 
 .container-fluid
 {
@@ -40,6 +40,114 @@
   float: left;
   margin-bottom: -100px;
 }
+
+.right
+{
+  background-color: #2C3539;
+  flex: 1;
+  float: right;
+  margin-bottom: -100px;
+}
+
+ul
+{ background-color: maroon;
+  list-style-type: none;
+  overflow: hidden; 
+  position: fixed;
+  width: 100%;
+  opacity: 1;
+  z-index: 99; /*Makes navbar opaque*/
+}
+
+li
+{
+  float: right;
+  color: white;
+  text-decoration: none;
+}
+
+li a
+{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active)
+{
+  background-color: orange;
+  color: white;
+  text-decoration: none;
+}
+
+.active
+{
+  background-color: orange;
+  color: white;
+  text-decoration: none;
+}
+
+li a:visited
+{
+  color: white;
+  text-decoration: none;
+}
+
+li a:link
+{
+  color: white;
+  text-decoration: none;
+}
+
+
+.about
+{
+  position: relative;
+  background-color: #6D7B8D;
+}
+
+.abouttext
+{
+  color: white;
+  opacity: 1;
+}
+
+.imgme
+{
+  border-radius: 100%;
+  margin-top: 0px;
+}
+
+.filler1
+{
+  background-color: #6D7B8D;
+}
+
+.portfolio
+{
+  position: relative;
+  background-color: grey;
+}
+
+.portfoliotext
+{
+  color: white;
+  opacity: 1;
+}
+
+.projects
+{
+  color: white;
+  opacity: 1;
+  text-align: center; /*tests after this in projects*/
+  width 300px;
+  height: 300px;
+  overflow: hidden;
+}
+
+
 
 .right
 {
