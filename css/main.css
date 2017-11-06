@@ -14,7 +14,7 @@
 /**Testing**/
 body
 {
-  background-image: aboutme.JPG;
+  background-image: url("images/aboutme.JPG");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
