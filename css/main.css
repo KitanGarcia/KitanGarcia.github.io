@@ -11,15 +11,15 @@
   -ms-box-sizing: border-box;
   box-sizing: border-box;
 }
-/**Testing**/
+/**Testing
 body
 {
   background-image: url("../../images/aboutme.JPG");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-}
-/**
+}**/
+
 .container-fluid
 {
   display: block;
@@ -64,10 +64,10 @@ ul
   position: fixed;
   width: 100%;
   opacity: 1;
-  z-index: 99; /*Makes navbar opaque*//*
+  z-index: 99; /*Makes navbar opaque*/
 }
-*/
-/*
+
+
 li
 {
   float: right;
@@ -150,7 +150,7 @@ li a:link
 {
   color: white;
   opacity: 1;
-  text-align: center; /*tests after this in projects*//*
+  text-align: center; /*tests after this in projects*/
   width 300px;
   height: 300px;
   overflow: hidden;
@@ -173,9 +173,9 @@ ul
   position: fixed;
   width: 100%;
   opacity: 1;
-  z-index: 99; /*Makes navbar opaque*//*
-}*/
-/*
+  z-index: 99; /*Makes navbar opaque*/
+}
+
 li
 {
   float: right;
@@ -260,4 +260,3 @@ li a:link
   opacity: 1;
   text-align: center;
 }
-**/
