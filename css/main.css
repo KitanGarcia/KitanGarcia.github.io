@@ -19,7 +19,7 @@ body
   background-position: center;
   background-attachment: fixed;
 }
-
+/**
 .container-fluid
 {
   display: block;
@@ -259,3 +259,4 @@ li a:link
   opacity: 1;
   text-align: center;
 }
+**/
