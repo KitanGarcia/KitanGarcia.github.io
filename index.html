@@ -4,77 +4,140 @@
     <meta charset utf = "utf-8">
     <meta name = "viewport" content = "width=device-width, initial-scale = 1">
     <title> Christian García</title>
-    <link rel = "stylesheet" type = "text/css" href = "css/main.css">
-    <link rel = "stylesheet" href = "css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <!--^^FONT AWESOME^^-->
+
+    <meta http-equiv="content-type" content="text/html;charset=utf-8"/> <!--to allow for special characters-->
+    <link type = "text/javascript" src = "typed.js"></script>
+    <!--Link css after Bootstrap so that it overrides it!-->
+
+    <link rel = "shortcut icon" type = "image/x-icon" href = "./favicon.ico">
+ <!--   <link rel="apple-touch-icon" sizes="180x180" href"./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#fafafa">-->
+    <!--for favicon-->
+
+
+    <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Homemade+Apple" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Neucha" rel="stylesheet">
+    <!--REMOVE FONTS NOT BEING USED!-->
   </head>
 
   <body>
-   <ul>
-      <li class ="name"><h2>Christian Garcia</h2><li>
-      <li><a class = "active" href = "#about"><h4>About</h4></a></li>
-      <li><a href = "#contact"><h4>Contact</h4></a></li>
-      <li><a href = "#portfolio"><h4>Portfolio</h4></a></li> 
-    </ul>
-
-    <div class = "container-fluid">
-      <div class = "row">
-        <div class = "left col-md-1 col-xs-1"></div> 
-        <div class = "about col-md-10 col-xs-10"> 
-          <br></br>
-          <br></br>
-          <h2 class = "abouttext">About me - In Progress</h2>
-          <h4 class = "abouttext col-md-5 col-xs-5"><br><br> Originally from San Jose, California, I now attend the University of California, Davis where I major in Computer Science and Engineering and minor in Technology Management. Currently, I serve as a developer for the <i>Star Wars Jedi Knight: Jedi Academ</i>y mod, <i>Movie Battles II,</i> and as an assistant technical director for Picnic Day, the largest student-run event in the United States. Have a look at my portfolio and resume below.</h4>
-          <img class = "img-responsive col-md-4 col-xs-4 imgme" src = "/images/aboutme.JPG">
-        </div>
-      <div class = "right col-md-1 col-xs-1"></div>
-    </div>
-  <div class = "row">
-    <div class = "left col-md-1 col-xs-1"></div> 
-    <div class = "filler1 col-md-10 col-xs-10">
-      <br></br>
-      <br></br>
-      <br></br>
-    </div>
-    <div class = "right col-md-1 col-xs-1"></div>
-  </div>
+   <nav>
+     <ul class = "container">
+       <li class = "name"><h2>Christian García</h2></li>
+     </ul>
+   </nav>
 
 
-    <div class = "row">
-      <div class = "left col-md-1 col-xs-1"></div> 
-      <div class = "portfolio col-md-10 col-xs-10">
-        <h2 class = "portfoliotext">Portfolio - In Progress</h2>
-        <div class = "projects col-md-3 col-xs-3 col3center">
-          <h4>Airline Simulator</h4>
-          <img class = "img-responsive" src = "/images/airlines.png">
-        </div>
-        <div class = "projects col-md-3 col-xs-3 col3center">
-          <h4>Minesweeper</h4>
-          <img class = "img-responsive" src = "/images/minesweeper.png">
-        </div>
-        <div class = "projects col-md-3 col-xs-3 col3center">
-          <h4>Hangman</h4>
-          <img class = "img-responsive" src = "/images/hangman.png">
-        </div>
-        <div class = "projects col-md-3 col-xs-3 col3center">
-          <h4>Connectn</h4>
-          <img class = "img-responsive" src = "/images/connectn.png">
-        </div>
-        <br></br>
-        <br></br>
-      </div>
-      <div class = "right col-md-1 col-xs-1"></div> 
-    </div>
+   <nav>
+     <ul class = "sidebar">
+       <li class = "navlinks">
+         <a title = "home" class = "active" href = "#home"><!--Do I want to keep titles or no?-->
+           <i class="fas fa-home"></i>
+         </a>
+       </li>
+       <li class = "navlinks">
+         <a id = "aboutBtn" title = "about" href = "#about">
+           <i class="fas fa-portrait"></i>
+         </a>
+       </li>
+       <li class = "navlinks">
+         <a title = "interests" href = "#interests">
+           <i class="fas fa-theater-masks"></i>
+         </a>
+       </li>
+       <li class = "navlinks">
+         <a title = "portfolio" href = "#portfolio">
+           <i class="fas fa-folder-open"></i>
+         </a>
+       </li>
+     </ul>
+   </nav>
 
- <!--          <h2>Portfolio</h2>   
-       <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-        </div>         -->
+   <div class = "container-fluid">
+     <div id = "home" class = "row">
+       <div class = "row">
+         <h3>In progress...</h3>
+ <!--        <p>Insert short description (with typed.js) and FA. Resume, Github, LinkedIn, Email.</p>
+         <p>Have picture here or in about section???</p>-->
 
-    </div>
- </body>
+         <ul class = "FAbuttons">
+           <li class = "inline">
+             <a href = "assets/Christian_Garcia_resume.pdf">
+               <i class = "fa fa-file hvr-bob">
+               </i>
+             </a>
+           </li>
+           <li class = "inline">
+             <a href = "https://www.linkedin.com/in/christiankitangarcia">
+               <i class = "fab fa-linkedin-in hvr-grow">
+               </i>
+             </a>
+           </li>
+           <li class = "inline">
+             <a href = "https://github.com/KitanGarcia">
+               <i class = "fab fa-github hvr-bob">
+               </i>
+             </a>
+           </li>
+           <li class = "inline">
+             <a href = "mailto:kitangar@gmail.com">
+               <i class = "fa fa-envelope hvr-grow">
+               </i>
+             </a>
+           </li>
+         </ul>
+       </div>
+     </div>
+     <div id = "about" class = "row">
+       <p>About</p>
+     </div>
+     <div id = "interests" class = "row">
+       <p>Interests</p>
+     </div>
+     <div id = "portfolio" class = "row">
+       <p>Portfolio</p>
+     </div>
+   </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>/*FINISH THIS!*/
+      $(document).ready(function(){
+        $('#aboutBtn').on("click", function(event) {
+          console.log("CLICK FIRED!");
+          console.log($(this).attr('href'));
+          $('html, body').animate({
+            scrollTop: $($(this).attr('href')).offset().top
+          }, 1000);
+          //return false;
+        });
+      })
+    </script>
+  </body>
 </html>
+
+
+
+
+
+<!--        <div> Minor in Tech Management.</div>
+           <div> Hablo fluentemente el español.</div>
+           <div> Runasimita rimani.</div>
+           <div> I play and watch soccer religiously and enjoy freestyling.</div>
+           <div> I love traveling, the outdoors, and photography.</div>
+           <div> I practice calligraphy.</div>
+           <div> I play the quena.<div>
+           </h2>-->
