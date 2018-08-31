@@ -44,22 +44,22 @@
    <nav>
      <ul class = "sidebar">
        <li class = "navlinks">
-         <a id = "homeBtn" title = "home" class = "active" href = "#home"><!--Do I want to keep titles or no?-->
+         <a id = "homeBtn" title = "home" class = "active" href = "#home" data-pos="0"><!--Do I want to keep titles or no?-->
            <i class="fas fa-home"></i>
          </a>
        </li>
        <li class = "navlinks">
-         <a id = "aboutBtn" title = "about" href = "#about">
+         <a id = "aboutBtn" title = "about" href = "#about" data-pos="1">
            <i class="fas fa-portrait"></i>
          </a>
        </li>
        <li class = "navlinks">
-         <a id = "interestsBtn" title = "interests" href = "#interests">
+         <a id = "interestsBtn" title = "interests" href = "#interests" data-pos="2">
            <i class="fas fa-theater-masks"></i>
          </a>
        </li>
        <li class = "navlinks">
-         <a id = "portfolioBtn" title = "portfolio" href = "#portfolio">
+         <a id = "portfolioBtn" title = "portfolio" href = "#portfolio" data-pos="3">
            <i class="fas fa-folder-open"></i>
          </a>
        </li>
@@ -102,7 +102,10 @@
        </div>
      </div>
      <div id = "about" class = "row">
-       <p>About</p>
+       <div class = "aboutrow row">
+         <p>Hi! I'm Kitan, a rising senior studying Computer Science and Engineering and minoring in Technology Management at the University of California, Davis.</p>
+         <p>I am a lover of learning and an insatiable problem solver, always seeking new challenges and honing new skills. This, along with the dream of making a positive difference in people's lives, has led me to pursue engineering. When I'm not programming, studying, or building something new, you can find me fiendishly playing soccer (field, street, or freestyle), jamming on the quena (a flute from the Andes), practicing calligraphy, and much more. Besides that, I am enchanted by nature, the outdoors, travel, and people. I find the exploration of cultures, places, and perspectives to be not only a passion, but something that is paramount in this day and age.</p>
+       </div>
      </div>
      <div id = "interests" class = "row">
        <p>Interests</p>
@@ -116,54 +119,18 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>/*FINISH THIS!*/
       //container-fluid').animate({scrollTop: $('.container-fluid').height()}, 500)
-      $(document).ready(function(){
-        $('#homeBtn').on("click", function(event) {
-          console.log("CLICK FIRED!");
-          console.log($(this).attr('href'));
-          $('.container-fluid').animate({
-            scrollTop: $($(this).attr('href')).offset().top
-          }, 1000);
-          return false;
-        });
+//http://jsfiddle.net/DtADS/
+      $(document).ready(function() {
+        const containerEl = $('.container-fluid')
+        $('.navlinks a').click(function(e) {
+          const anchorPos = parseInt($(this).data('pos'), 10)
+          containerEl.animate({scrollTop: (anchorPos * containerEl.height())}, 1000)
+          return false
+        })
       })
-
-      $(document).ready(function(){
-        $('#aboutBtn').on("click", function(event) {
-          console.log("CLICK FIRED!");
-          console.log($(this).attr('href'));
-          $('.container-fluid').animate({
-            scrollTop: $($(this).attr('href')).offset().top
-          }, 1000);
-          return false;
-        });
-      })
-
-      $(document).ready(function(){
-        $('#interestsBtn').on("click", function(event) {
-          console.log("CLICK FIRED!");
-          console.log($(this).attr('href'));
-          $('.container-fluid').animate({
-            scrollTop: $($(this).attr('href')).offset().top
-          }, 1000);
-          return false;
-        });
-      })
-
-      $(document).ready(function(){
-        $('#portfolioBtn').on("click", function(event) {
-          console.log("CLICK FIRED!");
-          console.log($(this).attr('href'));
-          $('.container-fluid').animate({
-            scrollTop: $($(this).attr('href')).offset().top
-          }, 1000);
-          return false;
-        });
-      })
-
     </script>
   </body>
 </html>
-
 
 
 
