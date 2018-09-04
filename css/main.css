@@ -184,12 +184,12 @@ body, html
 #home 
 {
   color: white;
-  background-image: url("../assets/home.JPG");
+  background-image: url("../assets/2.png");
 }
 
 #about
 {
-  background-image: url("../assets/about.JPG");
+  background-image: url("../assets/1.png");
 }
 
 #home:hover, #about:hover, #interests:hover, #portfolio:hover
