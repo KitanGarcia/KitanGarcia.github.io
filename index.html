@@ -30,6 +30,13 @@
     <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Homemade+Apple" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Neucha" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bilbo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Jim+Nightshade" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ruthie" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Felipa" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+
+
     <!--REMOVE FONTS NOT BEING USED!-->
   </head>
 
@@ -69,7 +76,7 @@
    <div class = "container-fluid">
      <div id = "home" class = "row">
        <div class = "row">
-         <h3>In progress...</h3>
+         <span><h3 id = "typedstuff" ></h3></span>
  <!--        <p>Insert short description (with typed.js) and FA. Resume, Github, LinkedIn, Email.</p>
          <p>Have picture here or in about section???</p>-->
 
@@ -117,9 +124,8 @@
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script>/*FINISH THIS!*/
-      //container-fluid').animate({scrollTop: $('.container-fluid').height()}, 500)
-//http://jsfiddle.net/DtADS/
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.9/typed.min.js"></script>
+    <script>
       $(document).ready(function() {
         const containerEl = $('.container-fluid')
         $('.navlinks a').click(function(e) {
@@ -128,18 +134,20 @@
           return false
         })
       })
+
+      let options = {
+        strings: ["Hablo fluentemente el español.", "Runasimita rimani.", " I play and watch soccer religiously.", " I love traveling, the outdoors, and photography.", " I practice calligraphy.", " I play the quena"],
+        startDelay: 500,
+        typeSpeed: 100,
+        backSpeed: 80,
+        smartBackspace: true,
+        backDelay: 1000,
+        loop: true,
+        loopCount: Infinity,
+        showCursor: false
+      }
+      const typedstuff = new Typed('#typedstuff', options);
     </script>
   </body>
 </html>
 
-
-
-
-<!--        <div> Minor in Tech Management.</div>
-           <div> Hablo fluentemente el español.</div>
-           <div> Runasimita rimani.</div>
-           <div> I play and watch soccer religiously and enjoy freestyling.</div>
-           <div> I love traveling, the outdoors, and photography.</div>
-           <div> I practice calligraphy.</div>
-           <div> I play the quena.<div>
-           </h2>-->

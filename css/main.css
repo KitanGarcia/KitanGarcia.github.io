@@ -181,15 +181,27 @@ body, html
   background-attachment: fixed;
 }
 
+#typedstuff
+{
+  font-family: "Neucha", cursive;
+  font-family: "Rock Salt", cursive;
+  font-family: "Homemade Apple", cursive;
+  font-family: 'Jim Nightshade', cursive;
+  font-family: 'Bilbo', cursive;
+  font-family: 'Ruthie', cursive;
+  font-family: 'Felipa', cursive;
+ /* font-family: 'Indie Flower', cursive;*/
+
+}
 #home 
 {
   color: white;
-  background-image: url("../assets/2.png");
+  background-image: url("../assets/home.png");
 }
 
 #about
 {
-  background-image: url("../assets/1.png");
+  background-image: url("../assets/about.png");
 }
 
 #home:hover, #about:hover, #interests:hover, #portfolio:hover
