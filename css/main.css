@@ -191,6 +191,7 @@ body, html
   font-family: 'Ruthie', cursive;
   font-family: 'Felipa', cursive;
  /* font-family: 'Indie Flower', cursive;*/
+  height: 26px; /*should improve for mobile*/
 
 }
 #home 
