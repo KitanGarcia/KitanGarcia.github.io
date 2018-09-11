@@ -133,7 +133,15 @@
           containerEl.animate({scrollTop: (anchorPos * containerEl.height())}, 1000)
           return false
         })
-      })
+
+//below jquery changes size/position of about section
+/*
+        $('#about').hover(function() {
+            console.log("hovering!");
+            console.log($(this));
+            $('p').toggleClass('hidden');
+        })
+      })*/
 
       let options = {
         strings: ["Computer Science and Engineering student.", "I minor in Technology Management and Latin American Studies.", "Coder.", "Quenista.", "Freestyler.", "Calligrapher."],
