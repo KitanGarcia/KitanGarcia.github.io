@@ -1,4 +1,4 @@
-
+*
 {
   outline: 1px solid red !important;
   box-sizing: border-box;
@@ -175,6 +175,11 @@ body, html
 {
   color: white;
   background-image: url("../assets/home.png");
+}
+
+#home > .row
+{
+  margin-top: 25%;
 }
 
 #about
