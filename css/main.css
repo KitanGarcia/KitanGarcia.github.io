@@ -1,4 +1,4 @@
-*
+
 {
   outline: 1px solid red !important;
   box-sizing: border-box;
@@ -166,7 +166,8 @@ body, html
   font-family: 'Ruthie', cursive;
   font-family: 'Felipa', cursive;
  /* font-family: 'Indie Flower', cursive;*/
-  height: 26px; /*should improve for mobile*/
+  height: 40px; /*should improve for mobile*/
+  font-size: 40px;
 
 }
 
@@ -194,6 +195,11 @@ body, html
   margin-top: 10%;
 }
 
+#interests 
+{
+  color: white;
+  background-image: url("../assets/tempinterests.png");
+}
 
 
 
