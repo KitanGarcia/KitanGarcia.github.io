@@ -193,7 +193,7 @@ body, html
   color: white;
 }
 
-.aboutrow
+.aboutrow, .interestsrow
 {
   width: 30%;
   margin-right: 30%;/*may need to be modified for mobile*/
@@ -202,7 +202,6 @@ body, html
 
 #interests 
 {
-  color: white;
   background-image: url("../assets/tempinterests.png");
 }
 
