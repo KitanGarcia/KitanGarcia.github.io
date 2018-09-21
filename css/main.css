@@ -31,6 +31,7 @@ body, html
   position: fixed;
   width: 100%;
   z-index: 99;
+  padding-left: 0;
 }
 
 .sidebar
@@ -48,6 +49,7 @@ body, html
   position: fixed;
   top: 30%;
   bottom: 25%;
+  padding-left: 23px;
   
   width: 0;
   height: 0;
@@ -57,9 +59,25 @@ body, html
 
 .name
 {
+  padding-left: 10px;
   display: flex;
   flex: 4;
   margin-top: -10px !important;
+  font-family: 'Bilbo', cursive;
+  font-family: 'Ruthie', cursive;
+}
+
+.name > h2
+{
+  font-size: 50px;
+}
+
+#logo
+{
+  padding-top: 2px;
+  padding-left: 2px;
+  width: 8%;
+  height: 2%;
 }
 
 .navlinks
@@ -158,14 +176,7 @@ body, html
 
 #typedstuff
 {
-  font-family: "Neucha", cursive;
-  font-family: "Rock Salt", cursive;
-  font-family: "Homemade Apple", cursive;
-  font-family: 'Jim Nightshade', cursive;
-  font-family: 'Bilbo', cursive;
-  font-family: 'Ruthie', cursive;
   font-family: 'Felipa', cursive;
- /* font-family: 'Indie Flower', cursive;*/
   height: 40px; /*should improve for mobile*/
   font-size: 40px;
 
