@@ -1,4 +1,4 @@
-
+*
 {
   outline: 1px solid red !important;
   box-sizing: border-box;
@@ -234,7 +234,20 @@ body, html
   background-image: url("../assets/portfolio.png");
 }
 
+.card-panel
+{
+  display: block;
+  width: 100%;
+  margin-left: 20%;
+}
 
+.card
+{
+  border-radius: 3%;
+  border-color: white;;
+  color: white;
+  background-color: grey;
+}
 
 
 
