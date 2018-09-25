@@ -219,14 +219,25 @@ body, html
 
 .interestsrow
 {
-  width: 30%;
-  margin-left: 30%;
+  width: 50%;
+  margin-left: 45%;
   margin-top: 5%;
 }
 
-#interests
+#interest1
 {
-  background-image: url("../assets/tempinterests.png");
+  width: 50%;
+  height: 100%;
+  background-image: url("../assets/interests1.png");
+}
+
+#interest2
+{
+  width: 50%;
+  height: 100%;
+  background-color: blue;
+  background-size: cover;
+  background-image: url("../assets/interests2.png");
 }
 
 #portfolio 
