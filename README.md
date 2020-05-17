@@ -1,2 +1,2 @@
 # KitanGarcia.github.io
-Personal site attempt this is.
+An in progress personal site where I'll include projects and other information.
