@@ -148,7 +148,8 @@ body, html
   padding: 0;
   height: 100%;
   width: 100%;
-  background-color: transparent;
+/*  background-color: transparent;*/
+ background-color: black;
 }
 
 /*
@@ -184,6 +185,10 @@ body, html
   background-size: cover;
   margin-left: 0;
   margin-right: 0;
+  /*
+  opacity: .5;
+  animation: screen-darken 4s linear; Calls animation to slowly darken screen
+  */
 }
 
 #typedstuff
@@ -196,6 +201,7 @@ body, html
 #homeContainer
 {
   overflow: hidden;
+  background-color: black;
 }
 
 #home 
@@ -204,6 +210,19 @@ body, html
   background-image: url("../assets/home3.JPG");
   background-position: 1.5vw -90%;
   transform: scale(1.33);
+  opacity: .5;
+  animation: screen-darken 3s linear; /*Calls animation to slowly darken screen*/
+}
+
+/*Slowly darken screen*/
+@keyframes screen-darken
+{
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: .5;
+  }
 }
 
 #home > .row
