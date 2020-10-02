@@ -193,12 +193,17 @@ body, html
   font-size: 40px;
 
 }
+#homeContainer
+{
+  overflow: hidden;
+}
 
 #home 
 {
   color: white;
-  background-image: url("../assets/home1.JPG");
-  background-position: 0% 65%;
+  background-image: url("../assets/home3.JPG");
+  background-position: 1.5vw -90%;
+  transform: scale(1.33);
 }
 
 #home > .row
@@ -208,13 +213,13 @@ body, html
 
 #about
 {
-  background-image: url("../assets/about.png");
+  background-image: url("../assets/about.JPG");
   background-position: 0% 65%;
 }
 
 #interests
 {
-  background-image: url("../assets/interests3.png");
+  background-image: url("../assets/interests3.JPG");
 }
 
 .generaltext
@@ -286,7 +291,8 @@ body, html
 
 #portfolio 
 {
-  background-image: url("../assets/portfolio.png");
+  background-image: url("../assets/portfolio1.jpg");
+  background-position: 100% 37%;
 }
 
 .card-panel
