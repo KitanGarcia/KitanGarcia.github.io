@@ -138,28 +138,17 @@ body, html
 /*get rid of above*/
 
 
-/*
 .container-fluid
 {
-  position: fixed;/////container encompasses whole screen and everything can be centered///////////
-  overflow-y: scroll;*/
+  position: fixed;/*/////container encompasses whole screen and everything can be centered///////////*/
+  overflow-y: scroll;
  /* overflow: hidden;/*hides scrollbar
   display: flex;
-  flex-direction: column;
- /* padding: 0;
-  margin: 0;
-  top: 0;
-  left: 0;THESE DO NOT SEEM NECESSARY//////////////////
+  flex-direction: column;*/
+  padding: 0;
   height: 100%;
   width: 100%;
   background-color: transparent;
-}*/
-
-
-
-.container-fluid
-{
-  padding: 0;
 }
 
 /*
@@ -193,6 +182,8 @@ body, html
 {
   height: 100vh;
   background-size: cover;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 #typedstuff
