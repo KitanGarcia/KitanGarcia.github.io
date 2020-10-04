@@ -16,6 +16,13 @@ body, html
   height: auto;
 }
 
+a, a:hover, a:focus, button
+{
+  text-decoration: none;
+  outline: none;
+  color: unset;
+}
+
 /*GET RID OF FLEX 1 IN CONTAINER-FLUID*/
 .container
 {
@@ -352,6 +359,7 @@ body, html
 .currentCardMedia
 {
   width: 100%;
+  border-radius: 15px;
 }
 
 .cardDescription
@@ -365,38 +373,45 @@ body, html
   border: none;
   cursor: pointer;
   line-height: 1.5;
-  padding: 0.75em 2em;
   letter-spacing: 0.05rem;
   margin: 1em;
-  width: 13rem;
+  padding: 0;
 
 
   border-radius: 15px;
-  box-shadow: inset 0 0 0 4px #58cdd1;
-  color: #58afd1;
-  -webkit-transition: color 0.25s 0.0833333333s;
-  transition: color 0.25s 0.0833333333s;
+  border: 2px solid #58cdd1;
+  /*color: #58afd1;*/
+  color: #ffe593;
+  -webkit-transition: all .5s 0.3s;
+  transition: all .5s 0.3s;
   position: relative;
-}
 
-.viewCode {
-  box-shadow: inset 0 0 0 4px #58cdd1;
-  color: #58afd1;
-  -webkit-transition: all 1s 0.3s;
-  transition: all 1s 0.3s;
-  position: relative;
+  display: flex;
+  justify-content: center;
+  font-size: 1.7rem;
 }
 
 .viewCode:hover
 {
-  color: #ffe593;
-  box-shadow: inset 0 0 0 4px #b0f7b0;
-/*box-shadow: 0 0 10px 2px #0ff;*/
+  color: #0ff;
+  box-shadow: 0 0 10px 2px #0ff;
+  text-shadow: 0 0 2px #0ff;
 }
 
-/*START Border from https://codepen.io/blackellis/pen/jObGbeG*/
-/*END Border from https://codepen.io/blackellis/pen/jObGbeG*/
 
+.viewCode > a
+{
+  width: 14rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.viewCode > a > i
+{
+  margin-left: 1rem;
+}
 
 
 
@@ -432,13 +447,19 @@ body, html
   text-decoration: none;
 }*/
 
+
+/*
+ *
+ * THESE ARE ALL FOR THE LINKS ON THE PREVIOUS HOME SCREEN
 .FAbuttons
 {
-  /* width: 50%;centers li within div along with margin: auto */
+   width: 50%;centers li within div along with margin: auto */
+  /*
   display: flex;
   justify-content: center;
   padding: 0px;
-  list-style: none;/* makes bullet points disappear*/
+  list-style: none; makes bullet points disappear*/
+  /*
   font-size: 235%;
 }
 
@@ -448,13 +469,15 @@ body, html
   padding: 20px;
   width: 61.44px;
   height: 64.5px;
-  padding-left: 17px; /*so envelope doesn't get cut off*/
+  padding-left: 17px; so envelope doesn't get cut off
 }
 
-.FAbuttons > .inline > a > .fa:hover, .fab:hover /*Makes fa icons on first page change color*/
+.FAbuttons > .inline > a > .fa:hover, .fab:hover Makes fa icons on first page change color
 {
   color: rgb(252, 255, 90);
 }
+*/
+
 
 
 
