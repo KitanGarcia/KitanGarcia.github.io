@@ -72,7 +72,10 @@
 
    <div class = "container-fluid"> <!-- Height and width of the screen. Transparent. Fixed. -->
      <div id = "homeContainer" class = "screen row">
-       <div id = "home" class = "screen row">
+       <div id = "homeOverlay" class = "screen row">
+         <div id = "homeDetails">
+           <h1>Kitan García</h1>
+         </div>
        </div>
        <!--
        <div class = "row">
@@ -110,20 +113,37 @@
      </div>
 
      <div id = "about" class = "screen row">
+       <div id = "aboutOverlay" class = "screen row">
+       </div>
      </div>
 
      <div id = "interests" class = "screen row">
+       <div id = "interestsOverlay" class = "screen row">
+       </div>
      </div>
 
      <div id = "portfolio" class = "screen row">
+       <div id = "portfolioOverlay" class = "screen row">
+         <div id = "Sportaneous" class = "card draw-border">
+           <h2 class = "cardTitle">Title</h2>
+           <div  class = "cardImageDiv">
+           </div>
+           <p class = "cardDescription">Description</p>
+           <h3 class = "cardCodeLink">View Code</h3>
+         </div>
+       </div>
      </div>
    </div>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src = "https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.9/typed.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
     <script>
       $(document).ready(function() {
+
+        $("#homeOverlay").animate({backgroundColor: "rgba(0, 0, 0, .5)"}, 2000);
+
         const containerEl = $('.container-fluid');
         $('.navlinks a').click(function(e) {
           const anchorPos = parseInt($(this).data('pos'), 10);
@@ -132,34 +152,36 @@
 
 
           let screens = [];
-          screens.push($("#home"));
-          screens.push($("#about"));
-          screens.push($("#interests"));
-          screens.push($("#portfolio"));
+          screens.push($("#homeOverlay"));
+          screens.push($("#aboutOverlay"));
+          screens.push($("#interestsOverlay"));
+          screens.push($("#portfolioOverlay"));
+          //screens.push($("#portfolio"));
           switch(parseInt($(this).data('pos'), 10)) {
             case 0:
-              var elToDarken = $("#home");
+              var elToDarken = $("#homeOverlay");
               console.log(elToDarken);
               break;
             case 1:
-              var elToDarken = $("#about");
+              var elToDarken = $("#aboutOverlay");
               console.log(elToDarken);
               break;
             case 2:
-              var elToDarken = $("#interests");
+              var elToDarken = $("#interestsOverlay");
               console.log(elToDarken);
               break;
             case 3:
-              var elToDarken = $("#portfolio");
+              var elToDarken = $("#portfolioOverlay");
+              var colors = $(".cardTitle");
               console.log(elToDarken);
               break;
           }
           for (let i = 0; i < screens.length; i++) {
             if (screens[i] != elToDarken) {
-              screens[i].animate({opacity: 1}, 500);
+              screens[i].animate({backgroundColor: "rgba(0, 0, 0, 0)"}, 500);
             }
           }
-          elToDarken.animate({opacity: .5}, 2000);
+          elToDarken.animate({backgroundColor: "rgba(0, 0, 0, .5)"}, 2000);
           return false
         });
 //below jquery fixes interests shadow

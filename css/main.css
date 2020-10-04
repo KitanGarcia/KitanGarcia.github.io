@@ -148,8 +148,6 @@ body, html
   padding: 0;
   height: 100%;
   width: 100%;
-/*  background-color: transparent;*/
- background-color: black;
 }
 
 /*
@@ -185,10 +183,6 @@ body, html
   background-size: cover;
   margin-left: 0;
   margin-right: 0;
-  /*
-  opacity: .5;
-  animation: screen-darken 4s linear; Calls animation to slowly darken screen
-  */
 }
 
 #typedstuff
@@ -198,37 +192,33 @@ body, html
   font-size: 40px;
 
 }
-#homeContainer
-{
-  overflow: hidden;
-  background-color: black;
-}
 
-#home 
+#homeContainer
 {
   color: white;
   background-image: url("../assets/home3.JPG");
   background-position: 1.5vw -90%;
+  background-size: cover;
   transform: scale(1.33);
-  opacity: .5;
-  animation: screen-darken 3s linear; /*Calls animation to slowly darken screen*/
 }
 
-/*Slowly darken screen*/
-@keyframes screen-darken
-{
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: .5;
-  }
-}
-
+/*
 #home > .row
 {
   margin-top: 25%;
 }
+*/
+
+#homeDetails
+{
+  margin-top: 15%;
+  margin-left: 47%;
+  margin-right: 23%%;
+  height: 50%;
+  width: 30%;
+  text-align: center;
+}
+
 
 #about
 {
@@ -307,29 +297,50 @@ body, html
 }
 */
 
-
-#portfolio 
-{
-  background-image: url("../assets/portfolio1.jpg");
+#portfolio {
+  background:linear-gradient( rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0)100%),url("../assets/portfolio1.jpg");
   background-position: 100% 37%;
+  background-size: cover;
 }
 
-.card-panel
+/*Slowly darken screen*/
+@keyframes screen-darken
 {
-  display: block;
-  width: 100%;
-  margin-left: 20%;
+  /*
+  from {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  to {
+    background-color: rgba(0, 0, 0, .5);
+  }
+  */
+  /*
+  from {
+    background:linear-gradient( rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0)100%),url("../assets/home3.JPG");
+    background-position: 1.5vw -90%;
+    background-size: cover;
+  }
+  */
 }
 
 .card
 {
-  border-radius: 3%;
-  border-color: white;;
+  margin-top: 25vh;
+  margin-left: 40%;
+  height: 50%;
+  width: 20%;
+  padding: 10px;
+  background-color: #2a4163;
   color: white;
-  background-color: grey;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: inset 0 0 0 4px #58cdd1;
 }
 
 
+
+/*START Border from https://codepen.io/blackellis/pen/jObGbeG*/
+/*END Border from https://codepen.io/blackellis/pen/jObGbeG*/
 
 
 
