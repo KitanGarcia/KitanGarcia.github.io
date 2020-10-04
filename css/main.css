@@ -193,14 +193,22 @@ body, html
 
 }
 
-#homeContainer
+#homeOverflowContainer
 {
+  overflow: hidden;
   color: white;
+
+  /*NEED TO FIND A WAY TO MAKE THIS GO ON TOP Z INDEX*/
+}
+
+
+#homeBackground
+{
   background-image: url("../assets/home3.JPG");
   background-position: 1.5vw -90%;
-  background-size: cover;
   transform: scale(1.33);
 }
+
 
 /*
 #home > .row
