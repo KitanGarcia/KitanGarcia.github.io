@@ -73,7 +73,6 @@
            <h3>Pretend I'm cool/interesting here</h3>
            <h3>Blah blah blah...</h3>
            <h4>Maybe add Typed.js here</h4>
-           <h4>TODO: FIX FOCUS TO BOTTOM AND DARKEN AFTER VIDEO MINIMIZED</h4>
          </div>
        </div>
        <!--
@@ -190,22 +189,27 @@
           elToDarken.animate({backgroundColor: "rgba(0, 0, 0, .5)"}, 2000);
           return false
         });
-//below jquery fixes interests shadow
 
- /*       $('#interests').hover(function() {
-            console.log("hovering!");
-            console.log($(this));
-            $(this).children().toggleClass('sectionshadow');
-        })*/
+        //Start of code to scroll down after video exits fullscreen
+        if (document.addEventListener)
+        {
+          document.addEventListener('fullscreenchange', exitHandler, false);
+          document.addEventListener('mozfullscreenchange', exitHandler, false);
+          document.addEventListener('MSFullscreenChange', exitHandler, false);
+          document.addEventListener('webkitfullscreenchange', exitHandler, false);
+        }
 
-//below jquery changes size/position of about section
-/*
-        $('#about').hover(function() {
-            console.log("hovering!");
-            console.log($(this));
-            $('p').toggleClass('hidden');
-        })*/
-      
+        let fullscreenCount = 0;
+        function exitHandler()
+        {
+          if (document.webkitIsFullScreen || document.mozFullScreen || document.msFullscreenElement !== null) {
+            fullscreenCount++;
+            if (fullscreenCount % 2 == 0) {
+              containerEl.animate({scrollTop: (4 * containerEl.height())}, 1000);
+            }
+          }
+        }
+        //End of code to scroll down after video exits fullscreen
 
       let options = {
         strings: ["Computer Science and Engineering student.", "I minor in Technology Management and Latin American Studies.", "Coder.", "Quenista.", "Freestyler.", "Calligrapher."],
