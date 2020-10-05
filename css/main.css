@@ -216,14 +216,6 @@ a, a:hover, a:focus, button
   transform: scale(1.33);
 }
 
-
-/*
-#home > .row
-{
-  margin-top: 25%;
-}
-*/
-
 #homeDetails
 {
   margin-top: 15%;
@@ -232,6 +224,37 @@ a, a:hover, a:focus, button
   height: 50%;
   width: 30%;
   text-align: center;
+}
+
+#contactSection
+{
+  margin: 0;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.faContact
+{
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  width: 50%;
+}
+
+.faContact > li > a > i
+{
+  height: 100%;
+}
+
+.faContact > li > a > i:hover
+{
+  text-shadow: 0 0 4px #0ff;
 }
 
 
@@ -446,6 +469,8 @@ a, a:hover, a:focus, button
   color: white;
   text-decoration: none;
 }*/
+
+
 
 
 /*
