@@ -116,30 +116,31 @@ a, a:hover, a:focus, button
 }
 
 /*get rid of below*/
-.navlinks a{
+.navlinks a
+{
 	border: 2px solid #909090;
 	border-radius: 100%;
-	margin-right: 7px; /*space between*/
-    display: flex;
-    align-items: flex-start;
-    transition: all .75s;
-    -webkit-transition: all .75s;
+  transition: all .75s;
+  -webkit-transition: all .75s;
 } 
-.navlinks a i{
-    align-self:center;
-	color: orange;
-    transition: all .75s;
-    -webkit-transition: all .75s;
+.navlinks a i
+{
+  align-self:center;
+  color: white;
+  transition: all .75s;
+  -webkit-transition: all .75s;
+}
+
+.navlinks > a > .fa-theater-masks
+{
+  padding: .2em .1em;
 }
 
 .navlinks a:hover{
-  background: rgb(252, 255, 90);
- /* background: rgba(0,0,0,0.2);*/
- /* color: rgb(252, 255, 90) !important;*/
+  background: #0ff;
 }
 
 .navlinks a:hover i{
- /* color: rgb(252, 255, 90) !important;*/
   color: #3A3A3A;
 }
 /*get rid of above*/
@@ -149,9 +150,6 @@ a, a:hover, a:focus, button
 {
   position: fixed;/*/////container encompasses whole screen and everything can be centered///////////*/
   overflow-y: scroll;
- /* overflow: hidden;/*hides scrollbar
-  display: flex;
-  flex-direction: column;*/
   padding: 0;
   height: 100%;
   width: 100%;
@@ -254,7 +252,7 @@ a, a:hover, a:focus, button
 
 .faContact > li > a > i:hover
 {
-  text-shadow: 0 0 4px #0ff;
+  text-shadow: 0 0 8px #0ff;
 }
 
 
