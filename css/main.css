@@ -69,15 +69,19 @@ a, a:hover, a:focus, button
   height: 2%;
 }
 
-.navbuttons
+.navlinks
 {
-  flex: 1;
   margin-top: 8px;
 }
 
-.navbuttons i
+.navlinks i
 {
   width: 51px;
+}
+
+.navbuttons
+{
+  flex: 1;
 }
 
 .navbuttons a
@@ -258,6 +262,14 @@ a, a:hover, a:focus, button
   overflow-x: scroll;
 }
 
+/*This make and invisible element after the last card to compensate for the lack of margin in the flex*/
+#projectScrollCards::after
+{
+  content: "";
+  flex: 0 0 3vw;
+  padding: 1vw;
+}
+
 .card
 {
   height: 20vh;
@@ -397,8 +409,9 @@ a, a:hover, a:focus, button
   color: white;
   display: flex;
   justify-content: space-evenly;
-  font-size: 35px;/*Is this necessary*/
+  font-size: 50px;
   list-style-type: none;
+  height: 70px;
 }
 
 #projectScroll > li:nth-child(2)
@@ -406,7 +419,17 @@ a, a:hover, a:focus, button
   text-align: end;
 }
 
+#projectScroll a
+{
+  display: inline-block;
+  cursor: pointer;
+}
 
+#projectLeftScroll i, #projectRightScroll i
+{
+  width: 70px;
+  height: 70px;
+}
 
 
 

@@ -224,13 +224,13 @@ DARKENING SCREEN WAS WORKING FINE AT COMMIT 101
 
          <div id = "projectScroll">
            <li class = "navbuttons">
-             <a id = "projectLeftScroll" title = "Scroll Left" href = "#portfolio" data-pos="3">
+             <a id = "projectLeftScroll" title = "Scroll Left">
                <i class="fas fa-chevron-left"></i>
              </a>
            </li>
            <li class = "navbuttons">
-             <a id = "projectRightScroll" title = "Scroll Right" href = "#portfolio" data-pos="3">
-               <i class="fas fa-angle-double-right"></i>
+             <a id = "projectRightScroll" title = "Scroll Right">
+               <i class="fas fa-chevron-right"></i>
              </a>
            </li>
          </div>
@@ -283,6 +283,7 @@ https://codepen.io/faelplg/pen/MWwxred
     <script src = "https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.9/typed.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
     <script>
+      //Start of code to animate scrolling and darkening of screens
       $(document).ready(function() {
 
         $("#homeOverlay").animate({backgroundColor: "rgba(0, 0, 0, .5)"}, 2000);
@@ -291,8 +292,6 @@ https://codepen.io/faelplg/pen/MWwxred
         $('.navlinks a').click(function(e) {
           const anchorPos = parseInt($(this).data('pos'), 10);
           containerEl.animate({scrollTop: (anchorPos * containerEl.height())}, 1000);
-
-
 
           let screens = [];
           screens.push($("#homeOverlay"));
@@ -327,6 +326,7 @@ https://codepen.io/faelplg/pen/MWwxred
           elToDarken.animate({backgroundColor: "rgba(0, 0, 0, .5)"}, 2000);
           return false
         });
+      //End of code to animate scrolling and darkening of screens
 
         //Start of code to scroll down after video exits fullscreen
         if (document.addEventListener)
@@ -348,6 +348,22 @@ https://codepen.io/faelplg/pen/MWwxred
           }
         }
         //End of code to scroll down after video exits fullscreen
+
+
+        //Start of code to scroll the projects by clicking the arrows
+        let scrollCount = 0;
+        $('#projectLeftScroll').click(function(e) {
+          scrollCount--;
+          $("#projectScrollCards").animate({scrollLeft: ($("#projectScrollCards").width())}, 1000);
+          console.log("left scroll " + $("#projectScrollCards").width());
+        });
+        $('#projectRightScroll').click(function(e) {
+          scrollCount++;
+          $("#projectScrollCards").animate({scrollLeft: (3 * $(".card").width())}, 1000);
+          console.log("right scroll " + $("#projectScrollCards").width());
+        });
+        //End of code to scroll the projects by clicking the arrows
+
 
       let options = {
         strings: ["Hi, I'm Kitan and I like to play ball...", "I'm really, really cool", "I smoke lots of weeeeed", "I'll wreck you in FIFA", "I'm really smart too", "Wow, I'm just so good at everything", "Wow, I'm just the best...", "Just kidding; hire me, please", "I'll do anything!", "And I mean... ANYTHING......"],
