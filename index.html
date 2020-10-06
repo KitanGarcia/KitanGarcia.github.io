@@ -58,23 +58,23 @@ DARKENING SCREEN WAS WORKING FINE AT COMMIT 101
 
    <nav>
      <ul class = "sidebar">
-       <li class = "navlinks">
-         <a id = "homeBtn" title = "home" class = "active" href = "#home" data-pos="0">
+       <li class = "navbuttons navlinks">
+         <a id = "homeBtn" title = "Home" class = "active" href = "#home" data-pos="0">
            <i class="fas fa-home"></i>
          </a>
        </li>
-       <li class = "navlinks">
-         <a id = "aboutBtn" title = "about" href = "#about" data-pos="1">
+       <li class = "navbuttons navlinks">
+         <a id = "aboutBtn" title = "About" href = "#about" data-pos="1">
            <i class="fas fa-portrait"></i>
          </a>
        </li>
-       <li class = "navlinks">
-         <a id = "interestsBtn" title = "interests" href = "#interests" data-pos="2">
+       <li class = "navbuttons navlinks">
+         <a id = "interestsBtn" title = "Interests" href = "#interests" data-pos="2">
            <i class="fas fa-theater-masks"></i>
          </a>
        </li>
-       <li class = "navlinks">
-         <a id = "portfolioBtn" title = "portfolio" href = "#portfolio" data-pos="3">
+       <li class = "navbuttons navlinks">
+         <a id = "portfolioBtn" title = "Portfolio" href = "#portfolio" data-pos="3">
            <i class="fas fa-folder-open"></i>
          </a>
        </li>
@@ -141,7 +141,7 @@ DARKENING SCREEN WAS WORKING FINE AT COMMIT 101
      <div id = "portfolio" class = "screen row">
        <div id = "portfolioOverlay" class = "screen row">
 
-         <div id = "projectScrollMenu">
+         <div id = "projectScrollCards">
            <div id = "card1" class = "card">
              <div class = "cardInner">
                <div class = "cardFront">
@@ -219,6 +219,20 @@ DARKENING SCREEN WAS WORKING FINE AT COMMIT 101
              </div>
            </div>
 
+         </div>
+
+
+         <div id = "projectScroll">
+           <li class = "navbuttons">
+             <a id = "projectLeftScroll" title = "Scroll Left" href = "#portfolio" data-pos="3">
+               <i class="fas fa-chevron-left"></i>
+             </a>
+           </li>
+           <li class = "navbuttons">
+             <a id = "projectRightScroll" title = "Scroll Right" href = "#portfolio" data-pos="3">
+               <i class="fas fa-angle-double-right"></i>
+             </a>
+           </li>
          </div>
 
          <!--

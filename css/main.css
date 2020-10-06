@@ -69,23 +69,23 @@ a, a:hover, a:focus, button
   height: 2%;
 }
 
-.navlinks
+.navbuttons
 {
   flex: 1;
   margin-top: 8px;
 }
 
-.navlinks i
+.navbuttons i
 {
   width: 51px;
 }
 
-.navlinks a
+.navbuttons a
 {
   margin-right: 0px !important;
 }
 
-.navlinks > a > i
+.navbuttons > a > i
 {
   display: inline-block;
   box-shadow: inset 0px 0px 10px 3px #111;
@@ -93,37 +93,37 @@ a, a:hover, a:focus, button
   padding: .2em .2em;
 }
 
-.navlinks > a
+.navbuttons > a
 {
   text-decoration: none;
   color: orange;
 }
 
-.navlinks a
+.navbuttons a
 {
 	border: 2px solid #909090;
 	border-radius: 100%;
   transition: all .75s;
   -webkit-transition: all .75s;
 } 
-.navlinks a i
+.navbuttons a i
 {
-  align-self:center;
+  align-self: center;
   color: white;
   transition: all .75s;
   -webkit-transition: all .75s;
 }
 
-.navlinks > a > .fa-theater-masks
+.navbuttons > a > .fa-theater-masks
 {
   padding: .2em .1em;
 }
 
-.navlinks a:hover{
+.navbuttons a:hover{
   background: #0ff;
 }
 
-.navlinks a:hover i {
+.navbuttons a:hover i {
   color: #3A3A3A;
 }
 
@@ -244,15 +244,16 @@ a, a:hover, a:focus, button
 {
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 
-#projectScrollMenu
+#projectScrollCards
 {
   width: 80%;
   height: 60vh;
-  margin-top: 20vh;
+  margin-left: 10%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: start;
   align-items: center;
   overflow-x: scroll;
 }
@@ -264,7 +265,7 @@ a, a:hover, a:focus, button
   background-color: transparent;
   perspective: 1000px;
   flex-shrink: 0;
-  margin-left: 4vw;
+  margin-left: 3vw;
   margin-right: 4vw;
   transition: margin-bottom 2s;
 }
@@ -274,7 +275,7 @@ a, a:hover, a:focus, button
   width: 100%;
   height: 100%;
   text-align: center;
-  transition: transform 2s, box-shadow 2s, height 2s;
+  transition: transform 2s, box-shadow 3s, height 2s;
   transform-style: preserve-3d;
 }
 
@@ -282,7 +283,7 @@ a, a:hover, a:focus, button
 {
   transform: rotateX(180deg);
   height: 40vh;
-  box-shadow: 0 0 10px 2px #0ff;
+  box-shadow: 0 0 20px 2px #0ff;
 }
 
 /*vertically recenters card to account for larger size*/
@@ -387,10 +388,23 @@ a, a:hover, a:focus, button
   margin-left: 1rem;
 }
 
+#projectScroll
+{
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 51px;
+  font-size: 51px;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 35px;/*Is this necessary*/
+  list-style-type: none;
+}
 
-
-
-
+#projectScroll > li:nth-child(2)
+{
+  text-align: end;
+}
 
 
 
