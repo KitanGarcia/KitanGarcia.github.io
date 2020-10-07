@@ -219,6 +219,28 @@ DARKENING SCREEN WAS WORKING FINE AT COMMIT 101
              </div>
            </div>
 
+           <div id = "card8" class = "card">
+             <div class = "cardInner">
+               <div class = "cardFront">
+                 <p>8</p>
+               </div>
+               <div class = "cardBack">
+                 <h1>FLIPPED 8 WOOT</h1>
+               </div>
+             </div>
+           </div>
+
+           <div id = "card9" class = "card">
+             <div class = "cardInner">
+               <div class = "cardFront">
+                 <p>9</p>
+               </div>
+               <div class = "cardBack">
+                 <h1>FLIPPED 9 WOOT</h1>
+               </div>
+             </div>
+           </div>
+
          </div>
 
 
@@ -282,6 +304,7 @@ https://codepen.io/faelplg/pen/MWwxred
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src = "https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.9/typed.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollintoview/1.8/jquery.scrollintoview.min.js"></script>
     <script>
       //Start of code to animate scrolling and darkening of screens
       $(document).ready(function() {
@@ -352,18 +375,48 @@ https://codepen.io/faelplg/pen/MWwxred
 
         //Start of code to scroll the projects by clicking the arrows
         let scrollCount = 0;
+        let scrollList = [];
+        scrollList.push($("#card2"));
+        scrollList.push($("#card5"));
+        scrollList.push($("#card8"));
+
+
         $('#projectLeftScroll').click(function(e) {
           scrollCount--;
-          $("#projectScrollCards").animate({scrollLeft: ($("#projectScrollCards").width())}, 1000);
-          console.log("left scroll " + $("#projectScrollCards").width());
+          if (scrollCount < 0) {
+            scrollCount = 0;
+          }
+          console.log(scrollCount);
+          console.log(scrollList[scrollCount]);
+          console.log(scrollCount * (scrollList[scrollCount].offset().left));
+          console.log(scrollCount * (scrollList[scrollCount].offset().left - $("#projectScrollCards").width() / 2));
+
+          $("#projectScrollCards").animate({scrollLeft: (scrollList[scrollCount].prop('offsetLeft') - $("#projectScrollCards").width() / 2)}, 1000);
         });
+
+
         $('#projectRightScroll').click(function(e) {
           scrollCount++;
-          $("#projectScrollCards").animate({scrollLeft: (3 * $(".card").width())}, 1000);
-          console.log("right scroll " + $("#projectScrollCards").width());
+          if (scrollCount > 2) {
+            scrollCount = 2;
+          }
+          console.log(scrollCount);
+          console.log(scrollList[scrollCount]);
+          console.log(scrollCount * (scrollList[scrollCount].offset().left));
+          console.log(scrollCount * (scrollList[scrollCount].offset().left - $("#projectScrollCards").width() / 2));
+
+          $("#projectScrollCards").animate({scrollLeft: (scrollList[scrollCount].prop('offsetLeft') - $("#projectScrollCards").width() / 2)}, 1000);
         });
         //End of code to scroll the projects by clicking the arrows
 
+
+/*
+$( "*", document.body ).click(function( event ) {
+  var offset = $( this ).offset();
+  console.log("OFFSETTTTT");
+  console.log(offset);
+});
+        */
 
       let options = {
         strings: ["Hi, I'm Kitan and I like to play ball...", "I'm really, really cool", "I smoke lots of weeeeed", "I'll wreck you in FIFA", "I'm really smart too", "Wow, I'm just so good at everything", "Wow, I'm just the best...", "Just kidding; hire me, please", "I'll do anything!", "And I mean... ANYTHING......"],

@@ -1,4 +1,4 @@
-*{
+{
   outline: 1px solid red !important;
   box-sizing: border-box;
 }
@@ -259,7 +259,7 @@ a, a:hover, a:focus, button
   display: flex;
   justify-content: start;
   align-items: center;
-  overflow-x: scroll;
+  overflow-x: hidden;
 }
 
 /*This make and invisible element after the last card to compensate for the lack of margin in the flex*/
@@ -431,6 +431,15 @@ a, a:hover, a:focus, button
   height: 70px;
 }
 
+#projectLeftScroll i
+{
+  padding-left: 15px;
+}
+
+#projectRightScroll i
+{
+  padding-right: 15px;
+}
 
 
 
