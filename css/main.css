@@ -1,4 +1,4 @@
-{
+*{
   outline: 1px solid red !important;
   box-sizing: border-box;
 }
@@ -280,6 +280,7 @@ a, a:hover, a:focus, button
   margin-left: 3vw;
   margin-right: 4vw;
   transition: margin-bottom 2s;
+  border-radius: 15px;
 }
 
 .cardInner
@@ -289,6 +290,7 @@ a, a:hover, a:focus, button
   text-align: center;
   transition: transform 2s, box-shadow 3s, height 2s;
   transform-style: preserve-3d;
+  border-radius: 15px;
 }
 
 .card:hover .cardInner
@@ -310,12 +312,12 @@ a, a:hover, a:focus, button
   height: 100%;
   -webikit-backface-visibility: hidden;
   backface-visibility: hidden;
+  border-radius: 15px;
 }
 
 .cardFront
 {
-  background-color: #bbb;
-  color: red;
+  box-shadow: 0px 0px 5px white;
 }
 
 .cardBack
@@ -323,6 +325,12 @@ a, a:hover, a:focus, button
   background-color: yellow;
   color: blue;
   transform: rotateX(180deg);
+}
+
+.projectTitle
+{
+  text-align: center;
+  color: white;
 }
 
 .currentCard
@@ -441,17 +449,38 @@ a, a:hover, a:focus, button
   padding-right: 15px;
 }
 
+.card img
+{
+  width: 100%;
+}
+
+.card > .cardInner > .cardFront
+{
+  background-position: center;
+  background-size: cover;
+}
+
+#card1 > .cardInner > .cardFront
+{
+  background-image: url("../assets/whatsart.png");
+}
 
 
+#card2 > .cardInner > .cardFront
+{
+  background-image: url("../assets/docshare.png");
+}
 
 
+#card3 > .cardInner > .cardFront
+{
+  background-image: url("../assets/smop.png");
+}
 
-
-
-
-
-
-
+#card4 > .cardInner > .cardFront
+{
+  background-image: url("../assets/sportaneous.png");
+}
 
 
 

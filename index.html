@@ -143,9 +143,9 @@ DARKENING SCREEN WAS WORKING FINE AT COMMIT 101
 
          <div id = "projectScrollCards">
            <div id = "card1" class = "card">
+             <p class = "projectTitle">WhatsArt</p>
              <div class = "cardInner">
                <div class = "cardFront">
-                 <p>1</p>
                </div>
                <div class = "cardBack">
                  <h1>Flipping Card 1 Yeahhhhhhhhh</h1>
@@ -154,9 +154,9 @@ DARKENING SCREEN WAS WORKING FINE AT COMMIT 101
            </div>
 
            <div id = "card2" class = "card">
+             <p class = "projectTitle">DocShare</p>
              <div class = "cardInner">
                <div class = "cardFront">
-                 <p>2</p>
                </div>
                <div class = "cardBack">
                  <h1>Flipped Card 2</h1>
@@ -165,9 +165,9 @@ DARKENING SCREEN WAS WORKING FINE AT COMMIT 101
            </div>
 
            <div id = "card3" class = "card">
+             <p class = "projectTitle">SMOP</p>
              <div class = "cardInner">
                <div class = "cardFront">
-                 <p>3</p>
                </div>
                <div class = "cardBack">
                  <h1>FLIPPED 3 WOOT</h1>
@@ -176,9 +176,9 @@ DARKENING SCREEN WAS WORKING FINE AT COMMIT 101
            </div>
 
            <div id = "card4" class = "card">
+             <p class = "projectTitle">Sportaneous</p>
              <div class = "cardInner">
                <div class = "cardFront">
-                 <p>4</p>
                </div>
                <div class = "cardBack">
                  <h1>FLIPPED 4 WOOT</h1>
@@ -187,9 +187,9 @@ DARKENING SCREEN WAS WORKING FINE AT COMMIT 101
            </div>
 
            <div id = "card5" class = "card">
+             <p class = "projectTitle">Slack Scheduler</p>
              <div class = "cardInner">
                <div class = "cardFront">
-                 <p>5</p>
                </div>
                <div class = "cardBack">
                  <h1>FLIPPED 5 WOOT</h1>
@@ -198,9 +198,9 @@ DARKENING SCREEN WAS WORKING FINE AT COMMIT 101
            </div>
 
            <div id = "card6" class = "card">
+             <p class = "projectTitle">Coronavirus Map</p>
              <div class = "cardInner">
                <div class = "cardFront">
-                 <p>6</p>
                </div>
                <div class = "cardBack">
                  <h1>FLIPPED 6 WOOT</h1>
@@ -208,10 +208,11 @@ DARKENING SCREEN WAS WORKING FINE AT COMMIT 101
              </div>
            </div>
 
+           <!--
            <div id = "card7" class = "card">
+             <p class = "projectTitle">Flappy Bird (In Progress)</p>
              <div class = "cardInner">
                <div class = "cardFront">
-                 <p>7</p>
                </div>
                <div class = "cardBack">
                  <h1>FLIPPED 7 WOOT</h1>
@@ -222,7 +223,6 @@ DARKENING SCREEN WAS WORKING FINE AT COMMIT 101
            <div id = "card8" class = "card">
              <div class = "cardInner">
                <div class = "cardFront">
-                 <p>8</p>
                </div>
                <div class = "cardBack">
                  <h1>FLIPPED 8 WOOT</h1>
@@ -233,13 +233,13 @@ DARKENING SCREEN WAS WORKING FINE AT COMMIT 101
            <div id = "card9" class = "card">
              <div class = "cardInner">
                <div class = "cardFront">
-                 <p>9</p>
                </div>
                <div class = "cardBack">
                  <h1>FLIPPED 9 WOOT</h1>
                </div>
              </div>
            </div>
+           -->
 
          </div>
 
@@ -378,7 +378,7 @@ https://codepen.io/faelplg/pen/MWwxred
         let scrollList = [];
         scrollList.push($("#card2"));
         scrollList.push($("#card5"));
-        scrollList.push($("#card8"));
+        //scrollList.push($("#card8"));
 
 
         $('#projectLeftScroll').click(function(e) {
@@ -397,8 +397,8 @@ https://codepen.io/faelplg/pen/MWwxred
 
         $('#projectRightScroll').click(function(e) {
           scrollCount++;
-          if (scrollCount > 2) {
-            scrollCount = 2;
+          if (scrollCount > 1) {
+            scrollCount = 1;
           }
           console.log(scrollCount);
           console.log(scrollList[scrollCount]);
