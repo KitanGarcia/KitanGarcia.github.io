@@ -279,7 +279,7 @@ a, a:hover, a:focus, button
   margin-top: 20vh;
   margin-left: 3vw;
   margin-right: 4vw;
-  transition: margin-top 2s, height 2s;
+  transition: margin-top 1s, height 1s;
   border-radius: 15px;
 }
 
@@ -288,7 +288,7 @@ a, a:hover, a:focus, button
   width: 100%;
   height: 100%;
   text-align: center;
-  transition: transform 2s, box-shadow 3s, height 2s;
+  transition: transform 1s, box-shadow 2s, height 1s;
   transform-style: preserve-3d;
   border-radius: 15px;
 }
@@ -366,6 +366,15 @@ a, a:hover, a:focus, button
 .cardDescription
 {
   margin-top: 1em;
+  height: 50%;
+  overflow-y: scroll;
+  -ms-overflow-style: none; /*IE hide scroll bar but still scrollable*/
+  scrollbar-width: none; /*Firefox hide scroll bar but still scrollable*/
+}
+
+.cardDescription::-webkit-scrollbar
+{
+  display: none; /*Safari and Chrome hide scroll bar but still scrollable*/
 }
 
 .viewCode
