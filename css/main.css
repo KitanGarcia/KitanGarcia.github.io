@@ -367,14 +367,27 @@ a, a:hover, a:focus, button
 {
   margin-top: 1em;
   height: 50%;
+}
+
+
+.cardDescription > p:nth-child(2)
+{
+  height: 70%;
+  margin-bottom: 0;
+  padding-top: 10px;
   overflow-y: scroll;
   -ms-overflow-style: none; /*IE hide scroll bar but still scrollable*/
   scrollbar-width: none; /*Firefox hide scroll bar but still scrollable*/
 }
 
-.cardDescription::-webkit-scrollbar
+.cardDescription > p:nth-child(2)::-webkit-scrollbar
 {
   display: none; /*Safari and Chrome hide scroll bar but still scrollable*/
+}
+
+.cardDescription > p:nth-child(1)
+{
+  font-style: italic;
 }
 
 .viewCode
@@ -389,8 +402,8 @@ a, a:hover, a:focus, button
 
   border-radius: 15px;
   border: 2px solid #58cdd1;
-  /*color: #58afd1;*/
-  color: #ffe593;
+  color: white;
+  /*color: #ffe593;*/
   -webkit-transition: all .5s 0.3s;
   transition: all .5s 0.3s;
   position: relative;
