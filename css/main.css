@@ -174,7 +174,6 @@ a, a:hover, a:focus, button
 {
   margin-top: 15%;
   margin-left: 47%;
-  margin-right: 23%%;
   height: 50%;
   width: 30%;
   text-align: center;
@@ -218,9 +217,32 @@ a, a:hover, a:focus, button
   background-position: 0% 65%;
 }
 
+#aboutText
+{
+  margin-top: 5%;
+  margin-left: 70%;
+  height: 20%;
+  width: 30%;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+}
+
 #interests
 {
   background-image: url("../assets/interestsCom.jpeg");
+}
+
+#interestsText
+{
+  margin-top: 10%;
+  margin-left: 70%;
+  margin-right: 23%%;
+  height: 20%;
+  width: 30%;
+  text-align: center;
+  color: white;
+  font-size: 30px;
 }
 
 .generaltext
@@ -254,7 +276,7 @@ a, a:hover, a:focus, button
 #projectScrollCards
 {
   width: 80%;
-  height: 60vh;
+  height: 70vh;
   margin-left: 10%;
   display: flex;
   justify-content: start;
@@ -279,7 +301,7 @@ a, a:hover, a:focus, button
   margin-top: 20vh;
   margin-left: 3vw;
   margin-right: 4vw;
-  transition: margin-top 1s, height 1s;
+  transition: margin-top 2s, height 2s;
   border-radius: 15px;
 }
 
@@ -288,7 +310,7 @@ a, a:hover, a:focus, button
   width: 100%;
   height: 100%;
   text-align: center;
-  transition: transform 1s, box-shadow 2s, height 1s;
+  transition: transform 2s, box-shadow 2s, height 2s;
   transform-style: preserve-3d;
   border-radius: 15px;
 }
@@ -296,7 +318,7 @@ a, a:hover, a:focus, button
 .card:hover .cardInner
 {
   transform: rotateX(180deg);
-  height: 55vh;
+  height: 65vh;
   box-shadow: 0 0 20px 2px #0ff;
 }
 
@@ -365,7 +387,6 @@ a, a:hover, a:focus, button
 
 .cardDescription
 {
-  margin-top: 1em;
   height: 50%;
 }
 
@@ -388,6 +409,11 @@ a, a:hover, a:focus, button
 .cardDescription > p:nth-child(1)
 {
   font-style: italic;
+}
+
+.cardDescription > p:nth-child(3)
+{
+  margin-top: 10px;
 }
 
 .viewCode

@@ -29,15 +29,6 @@
   </head>
 
   <body>
-    <!--
-   <nav>
-     <ul class = "container">
-    	 <img id = "logo" src = "assets/logo.png">
-       <li class = "name"><h2>Christian García</h2><h1>
-     </ul>
-   </nav>
-    -->
-
 <!--
 
 
@@ -54,8 +45,6 @@ DARKENING SCREEN WAS WORKING FINE AT COMMIT 101
 
 
 -->
-
-
    <nav>
      <ul class = "sidebar">
        <li class = "navbuttons navlinks">
@@ -130,11 +119,19 @@ DARKENING SCREEN WAS WORKING FINE AT COMMIT 101
 
      <div id = "about" class = "screen row">
        <div id = "aboutOverlay" class = "screen row">
+         <div id = "aboutText">
+           <p>Coming soon...</p>
+           <p>View my portfolio by clicking the folder icon on the left</p>
+         </div>
        </div>
      </div>
 
      <div id = "interests" class = "screen row">
        <div id = "interestsOverlay" class = "screen row">
+         <div id = "interestsText">
+           <p>Coming soon...</p>
+           <p>Here, I will write more about my interests outside of engineering</p>
+           <p>View my portfolio by clicking the folder icon on the left</p>
        </div>
      </div>
 
@@ -152,8 +149,9 @@ DARKENING SCREEN WAS WORKING FINE AT COMMIT 101
                    <img class = "currentCardMedia" src = "assets/whatsart.png">
                  </div>
                  <div class = "cardDescription">
-                   <p>Find  details  and  locations  of  artworks  by  snapping  a  picture  them,  and  save  them  to  a  gallery</p>
-                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa q</p>
+                   <p>Find  details  and  locations  of  artworks  by  snapping  a  picture  them,  display them on an interactive map, and  save  them  to  a  gallery</p>
+                   <p>Leveraged a series of APIs in concert to bring the idea to life. Upon taking a photo on the cellphone, the artwork is identified by Google Vision API. The output of Google Vision is passed to MediaWiki API which returns the artist, year, medium, description, museum, etc. of the artwork and is presented to the user. The museum from MediaWiki is passed to Google's Geolocation API which returns its latitude and longitude coordinates, so a marker can be placed at that point in a React Native Map. This was all persisted on a MongoDB database. Additionally, user login is handled by Facebook OAuth 2.0, Twitter Oauth, or by traditional means. Each user has their own saved gallery of artworks they've photographed, complete with their details as demonstrated above, a map with each of the artworks locations, and a score incremented when they've taken a picture</p>
+                   <p>Built with: React Native, Express, MongoDB</p>
                  </div>
                  <button class = "viewCode">
                    <a href='https://github.com/huangka97/whatsart'>View<i class="fa fa-code"></i></a>
@@ -173,7 +171,8 @@ DARKENING SCREEN WAS WORKING FINE AT COMMIT 101
                  </div>
                  <div class = "cardDescription">
                    <p>A real-time collaborative document editor for multiple users</p>
-                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa q</p>
+                   <p>An electron application that allows simultaneous collaborative editing of word documents. Multiple users can register accounts, log in, and create or contribute to documents with any changes being successfully persisted. Material UI buttons are used to trigger changes in document editing/style. Draft.js is used to handle the rich text formatting, such as the ability to adjust alignment and change color, font, style, size, and so on. These details are stored in a MongoDB database so they can be successfully retrieved and editing can be resumed at a later time. Documents have a unique ID and link so that users can share them and authors can grant or remove editing privileges. Lastly, version history is maintained, so any saved version of the documented can be revisited and edited.</p>
+                   <p>Built with: Electron, React, Express, MongoDB</p>
                  </div>
                  <button class = "viewCode">
                    <a href='https://github.com/huangka97/Google-Docs'>View<i class="fa fa-code"></i></a>
@@ -193,7 +192,8 @@ DARKENING SCREEN WAS WORKING FINE AT COMMIT 101
                  </div>
                  <div class = "cardDescription">
                    <p>Measuring social media behavior between tech-savvy and non-savvy users</p>
-                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa q</p>
+                   <p>Two social media websites built for an experiment for a researcher writing her dissertation exploring social media behavior. Both versions contained the ability to add friends, make posts with text, images, or videos, profile pages for each user, a home page showing any recent posts by friends, several customizable options, and an adminstrator page for the client to monitor. One website was made specifically for tech-illiterate users and emphasized ease of use, clear navigation, and also accessibility. It had enhanced magnification features, speech to text input, and a painfully obvious flow. The second site was made for younger, tech-savvy individuals and had all the polished UI with all the bells and whistles and functionality of most current social media websites, as well as advertisements.</p>
+                   <p>Built with: Ruby on Rails, JavaScript, AWS, HTML, CSS</p>
                  </div>
                  <button class = "viewCode">
                    <a href='https://github.com/hipsterk/SMOP'>View<i class="fa fa-code"></i></a>
@@ -216,7 +216,8 @@ DARKENING SCREEN WAS WORKING FINE AT COMMIT 101
                  </div>
                  <div class = "cardDescription">
                    <p>Create or join pick-up sports games near you in a flash</p>
-                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa q</p>
+                   <p>With only a few taps, create a pickup game for your favorite sport. After selecting the sport, state the start time (or use the current time), location (or use the current location), and forecasted duration if applicable. Next, the pick up game will be broadcasted for all users to see and join! Alternatively, instead of creating a game, simply tap to view the map full of games around you! Games can can be sorted by sport and their start times are displayed so you can easily decide which one to join. This app was designed to be as simple and quick as possible so you can play sports with others in an instant.</p>
+                   <p>Built with: React Native, Express, MongoDB</p>
                  </div>
                  <button class = "viewCode">
                    <a href='https://github.com/kevinnguyen125/Sportaneous'>View<i class="fa fa-code"></i></a>
@@ -236,7 +237,8 @@ DARKENING SCREEN WAS WORKING FINE AT COMMIT 101
                  </div>
                  <div class = "cardDescription">
                    <p>Schedule events and get reminders on Slack with a bot syncing directly with your Calendar</p>
-                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa q</p>
+                   <p>A Slack bot that synchronizes with the users Google Calendar. It has the ability to schedule meetings at a certain time between different people, issue reminders, and list calendar items. It was trained using DialogFlow so that the intent of the user could be identified and the bot's appropriate response could be issued. The input given to the bot is generally through a chat, as is with most Slack bots and support for buttons in response to the bots, such as for a poll, was implemented. Login was through Google OAuth to allow easy connection to Google Calendar.</p>
+                   <p>Built with: Node, Express, DialogFlow, MongoDB</p>
                  </div>
                  <button class = "viewCode">
                    <a href='https://github.com/mhelmrich/slack-scheduler'>View<i class="fa fa-code"></i></a>
@@ -256,7 +258,8 @@ DARKENING SCREEN WAS WORKING FINE AT COMMIT 101
                  </div>
                  <div class = "cardDescription">
                    <p>Visualize the coronavirus toll on an interactive map</p>
-                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa q</p>
+                   <p>This map was built with React and a preexisting leaflet. The interactive map presents markers on each country that summarize its coronavirus statistics. When the markers hovered over, they expand to detail the country's total confirmed cases, deaths, number of patients recovered, and the time this information was last updated. To supply the user with this info, a simple get request is issued clientside.  </p>
+                   <p>Built with: React, Gatsby, Leaflet</p>
                  </div>
                  <button class = "viewCode">
                    <a href='https://github.com/KitanGarcia/CoronavirusMap'>View<i class="fa fa-code"></i></a>
