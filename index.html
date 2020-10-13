@@ -75,15 +75,10 @@ DARKENING SCREEN WAS WORKING FINE AT COMMIT 101
        <div id = "homeBackground" class = "screen row">
        <div id = "homeOverlay" class = "screen row">
          <div id = "homeDetails">
-           <h1>Kitan García</h1>
-           <h4>I NEED TO COMPRESS THE IMAGES! So they don't take forever to load/lag</h4>
-           <h3>Pretend I'm cool/interesting here</h3>
-           <h3>Blah blah blah...</h3>
-           <h4>Maybe add Typed.js here</h4>
+           <h1 id = "myName">Kitan García</h1>
            <span><h3 id = "typedstuff" ></h3></span>
 
            <div id = "contactSection" class = "row">
-             <h4>Let's get in touch! Yeahhhhhh... Wooooo....</h4>
              <ul class = "faContact">
                <li class = "inline">
                  <a href = "assets/Christian_Garcia_resume.pdf">
@@ -123,6 +118,7 @@ DARKENING SCREEN WAS WORKING FINE AT COMMIT 101
            <p>Coming soon...</p>
            <p>View my portfolio by clicking the folder icon on the left</p>
          </div>
+         <!--         <p class = "photoLocation">Fiesta de la Virgen del Carmen, Paucartambo, Cusco, Perú</p> -->
        </div>
      </div>
 
@@ -133,6 +129,7 @@ DARKENING SCREEN WAS WORKING FINE AT COMMIT 101
            <p>Here, I will write more about my interests outside of engineering</p>
            <p>View my portfolio by clicking the folder icon on the left</p>
        </div>
+       <!--       <p class = "photoLocation"><i class = "fas fa-globe-americas"></i>Salkantay Qocha, Cusco, Perú</p> -->
      </div>
 
      <div id = "portfolio" class = "screen row">
@@ -258,7 +255,7 @@ DARKENING SCREEN WAS WORKING FINE AT COMMIT 101
                  </div>
                  <div class = "cardDescription">
                    <p>Visualize the coronavirus toll on an interactive map</p>
-                   <p>This map was built with React and a preexisting leaflet. The interactive map presents markers on each country that summarize its coronavirus statistics. When the markers hovered over, they expand to detail the country's total confirmed cases, deaths, number of patients recovered, and the time this information was last updated. To supply the user with this info, a simple get request is issued clientside.  </p>
+                   <p>This map was built with React and a preexisting leaflet. The interactive map presents markers on each country that summarize its coronavirus statistics. When the markers are hovered over, they expand to detail the country's total confirmed cases, deaths, number of patients recovered, and the time this information was last updated. To supply the user with this info, a simple get request is issued clientside.  </p>
                    <p>Built with: React, Gatsby, Leaflet</p>
                  </div>
                  <button class = "viewCode">
@@ -451,16 +448,8 @@ https://codepen.io/faelplg/pen/MWwxred
         //End of code to scroll the projects by clicking the arrows
 
 
-/*
-$( "*", document.body ).click(function( event ) {
-  var offset = $( this ).offset();
-  console.log("OFFSETTTTT");
-  console.log(offset);
-});
-        */
-
       let options = {
-        strings: ["Hi, I'm Kitan and I like to play ball...", "I'm really, really cool", "I smoke lots of weeeeed", "I'll wreck you in FIFA", "I'm really smart too", "Wow, I'm just so good at everything", "Wow, I'm just the best...", "Just kidding; hire me, please", "I'll do anything!", "And I mean... ANYTHING......"],
+        strings: ["Engineer", "Footballer", "Calligrapher", "Quenista"],
         startDelay: 500,
         typeSpeed: 70,
         backSpeed: 70,

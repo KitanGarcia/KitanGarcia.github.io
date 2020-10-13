@@ -1,4 +1,4 @@
-*{
+{
   outline: 1px solid red !important;
   box-sizing: border-box;
 }
@@ -172,7 +172,7 @@ a, a:hover, a:focus, button
 
 #homeDetails
 {
-  margin-top: 15%;
+  margin-top: 20%;
   margin-left: 47%;
   height: 50%;
   width: 30%;
@@ -208,6 +208,11 @@ a, a:hover, a:focus, button
 .faContact > li > a > i:hover
 {
   text-shadow: 0 0 8px #0ff;
+}
+
+.photoLocation
+{
+  color: white;
 }
 
 
